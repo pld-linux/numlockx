@@ -11,7 +11,6 @@ BuildRequires:	XFree86-devel
 Requires:	XFree86
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-
 %description
 This little thingy allows you to start X with NumLock turned on (which
 is a feature that a lot of people seem to miss and nobody really knew
@@ -26,7 +25,7 @@ j± osi±gn±æ).
 %setup -q
 
 %build
-./configure --prefix=%{_prefix}
+%configure2_13
 %{__make}
 
 %install
