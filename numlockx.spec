@@ -11,7 +11,6 @@ BuildRequires:	XFree86-devel
 Requires:	XFree86
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 This little thingy allows you to start X with NumLock turned on (which
