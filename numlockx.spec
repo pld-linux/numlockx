@@ -6,6 +6,7 @@ Release:	1
 License:	Free (?)
 Group:		X11/XFree86
 Source0:	http://ourworld.cs.com/kvsmaster/files/%{name}-%{version}.tar.gz
+# Source0-md5:	e6956c130f29d0099291281dc99f049b
 BuildRequires:	XFree86
 BuildRequires:	XFree86-devel
 Requires:	XFree86
