@@ -1,5 +1,5 @@
 Summary:	numlockx - turn NumLock on for X Window
-Summary(pl):	numlockx - w³±czanie NumLock w X Window
+Summary(pl.UTF-8):   numlockx - wÅ‚Ä…czanie NumLock w X Window
 Name:		numlockx
 Version:	1.0
 Release:	1
@@ -17,10 +17,10 @@ This little thingy allows you to start X with NumLock turned on (which
 is a feature that a lot of people seem to miss and nobody really knew
 how to achieve this).
 
-%description -l pl
-Ten programik pozwala na uruchomienie X z w³±czonym NumLock (co jest
-cech±, której wielu osobom brakuje, a nikt tak naprawdê nie wie, jak
-j± osi±gn±æ).
+%description -l pl.UTF-8
+Ten programik pozwala na uruchomienie X z wÅ‚Ä…czonym NumLock (co jest
+cechÄ…, ktÃ³rej wielu osobom brakuje, a nikt tak naprawdÄ™ nie wie, jak
+jÄ… osiÄ…gnÄ…Ä‡).
 
 %prep
 %setup -q
