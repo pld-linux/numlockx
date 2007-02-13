@@ -1,5 +1,5 @@
 Summary:	numlockx - turn NumLock on for X Window
-Summary(pl.UTF-8):   numlockx - włączanie NumLock w X Window
+Summary(pl.UTF-8):	numlockx - włączanie NumLock w X Window
 Name:		numlockx
 Version:	1.0
 Release:	1
