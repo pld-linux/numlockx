@@ -2,7 +2,7 @@ Summary:	numlockx - turn NumLock on for X Window
 Summary(pl.UTF-8):	numlockx - włączanie NumLock w X Window
 Name:		numlockx
 Version:	1.1
-Release:	0.1
+Release:	1
 License:	Free (?)
 Group:		X11/XFree86
 Source0:	http://ktown.kde.org/~seli/numlockx/%{name}-%{version}.tar.gz
@@ -48,5 +48,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README AUTHORS ChangeLog
+%doc README AUTHORS ChangeLog LICENSE TODO
 %attr(755,root,root) %{_bindir}/numlockx
