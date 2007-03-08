@@ -1,0 +1,29 @@
+--- numlockx-1.1/Makefile.am.orig	2007-03-07 21:25:00.000000000 +0000
++++ numlockx-1.1/Makefile.am	2007-03-07 23:14:55.000000000 +0000
+@@ -3,11 +3,10 @@
+ bin_PROGRAMS = numlockx
+ 
+ numlockx_SOURCES = main.c 
+-numlockx_LDADD   = @XTESTLIB@ -lXext -lX11 @X_PRE_LIBS@
+-numlockx_LDFLAGS = @X_LDFLAGS@
+-INCLUDES = @X_INCLUDES@
++numlockx_LDADD   = @XTESTLIB@ @X_LIBS@
++numlockx_LDFLAGS = @X_LIBS@
+ 
+-CFLAGS = @CFLAGS@ -Wall -pedantic
++CFLAGS = @X_CFLAGS@ @CFLAGS@ -Wall -pedantic
+ 
+ EXTRA_DIST = AUTHORS LICENSE ChangeLog INSTALL README TODO 
+ 
+--- numlockx-1.1/configure.in.orig	2005-10-03 12:27:37.000000000 +0000
++++ numlockx-1.1/configure.in	2007-03-07 21:24:50.000000000 +0000
+@@ -9,8 +9,8 @@
+ dnl Checks for programs.
+ AC_PROG_CC
+ AC_PROG_RANLIB
+-K_PATH_X
+ AC_PREFIX_PROGRAM(X)
++PKG_CHECK_MODULES(X, x11)
+ NM_CHECK_XKB
+ NM_CHECK_XTEST
+ NM_CHECK_XSETUP
