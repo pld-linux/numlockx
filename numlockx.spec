@@ -4,7 +4,7 @@ Name:		numlockx
 Version:	1.1
 Release:	1
 License:	Free (?)
-Group:		X11/XFree86
+Group:		X11
 Source0:	http://ktown.kde.org/~seli/numlockx/%{name}-%{version}.tar.gz
 # Source0-md5:	127d9dfbbbe6dbec62cc78db340f913c
 Patch0:		%{name}-acam.patch
