@@ -7,8 +7,10 @@ License:	Free (?)
 Group:		X11/XFree86
 Source0:	http://ktown.kde.org/~seli/numlockx/%{name}-%{version}.tar.gz
 # Source0-md5:	127d9dfbbbe6dbec62cc78db340f913c
+Patch0:		%{name}-acam.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	pkg-config
 BuildRequires:	xorg-lib-libX11-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -24,6 +26,7 @@ ją osiągnąć).
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__aclocal}
