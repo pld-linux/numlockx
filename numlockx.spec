@@ -12,6 +12,8 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	pkg-config
 BuildRequires:	xorg-lib-libX11-devel
+BuildRequires:	xorg-lib-libXext-devel
+BuildRequires:	xorg-lib-libXtst-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
