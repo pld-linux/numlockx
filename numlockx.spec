@@ -10,7 +10,7 @@ Source0:	http://ktown.kde.org/~seli/numlockx/%{name}-%{version}.tar.gz
 Patch0:		%{name}-acam.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	pkg-config
+BuildRequires:	pkgconfig
 BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xorg-lib-libXext-devel
 BuildRequires:	xorg-lib-libXtst-devel
@@ -41,7 +41,8 @@ ją osiągnąć).
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
