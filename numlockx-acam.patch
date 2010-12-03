@@ -17,12 +17,11 @@
  
 --- numlockx-1.1/configure.in.orig	2005-10-03 12:27:37.000000000 +0000
 +++ numlockx-1.1/configure.in	2007-03-07 21:24:50.000000000 +0000
-@@ -9,8 +9,8 @@
- dnl Checks for programs.
- AC_PROG_CC
+@@ -9,7 +9,7 @@
  AC_PROG_RANLIB
--K_PATH_X
+ AC_PATH_X
  AC_PREFIX_PROGRAM(X)
+-K_PATH_X
 +PKG_CHECK_MODULES(X, x11)
  NM_CHECK_XKB
  NM_CHECK_XTEST
